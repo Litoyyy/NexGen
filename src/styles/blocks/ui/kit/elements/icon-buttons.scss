@@ -1,0 +1,32 @@
+.icon-button {
+    @include df_ac_jcc;
+    padding: .75rem;
+    border-radius: .75rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $dark-subdued-40;
+
+    @include transition(border-color);
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        path {
+            fill: $dark-subdued-40;
+            @include transition(fill);
+        }
+    }
+    &:hover {
+        border-color: $dark-subdued-80;
+        svg path {
+            fill: $dark-subdued-80;
+        }
+    }
+    &:active,
+    &_active,
+    &[data-state="active"] {
+        border-color: $accent;
+        svg path {
+            fill: $accent;
+        }
+    }
+}

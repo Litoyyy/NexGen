@@ -1,0 +1,35 @@
+.chat-card-bullet {
+    display: flex;
+    gap: 1rem;
+    &__icon-block {
+        @include df_ac_jcc;
+        height: 4rem;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: $accent;
+        svg {
+            width: 1.125rem;
+            height: 1.5rem;
+        }
+    }
+    &__info-block {
+        @include df_fdc;
+        gap: .75rem;
+    }
+    &__title-block {
+        @include df_ac;
+        justify-content: space-between;
+        @include text_1;
+        span {
+            @include button_2;
+        }
+    }
+    &__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @include text_2;
+        color: $dark-subdued-60;
+    }
+}

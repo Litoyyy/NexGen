@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NexGen</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=""/>
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <link rel="stylesheet" href="../../src/styles/main.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-section">
+            <div class="header-section__container">
+                <div class="header-section__logo-block">
+                    <a href="" class="header-section__logo-block__logo">
+                        <img src="../../src/assets/images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="header-section__logo-block__nav">
+                        <a href="/templates/client/projects-statuses.html" class="link link_size_basic link_primary">
+                            Статусы
+                        </a>
+                        <a href="/templates/client/make-request.html" class="link link_size_basic link_primary">
+                            Запрос
+                        </a>
+                        <a href="/templates/client/client-chats.html" class="link link_size_basic link_primary">
+                            Чаты
+                        </a>
+                    </div>
+                </div>
+                <a href="/templates/client/client-profile.html" class="header-section__nav-block">
+                    <button class="icon-button icon-button_active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.87988 24C2.87988 21.5752 3.84074 19.2496 5.55107 17.535C7.2614 15.8204 9.58111 14.8571 11.9999 14.8571C14.4187 14.8571 16.7384 15.8204 18.4487 17.535C20.159 19.2496 21.1199 21.5752 21.1199 24H2.87988ZM11.9999 13.7143C8.22078 13.7143 5.15988 10.6457 5.15988 6.85714C5.15988 3.06857 8.22078 0 11.9999 0C15.779 0 18.8399 3.06857 18.8399 6.85714C18.8399 10.6457 15.779 13.7143 11.9999 13.7143Z" fill="#A6A6A6"/>
+                        </svg>
+                    </button>
+                    <span>Клиент</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="client-profile-section">
+                <div class="client-profile-section__container">
+                    <div class="client-profile-section__title">
+                        Профиль
+                    </div>
+                    <div class="client-profile-section__info-block">
+                        <div class="client-profile-section__form-block">
+                            <div class="client-profile-section__title_sub">
+                                Личный кабинет
+                            </div>
+                            <form class="client-profile-section__form-block__inputs" id="client-profile-form">
+                                <div class="field">
+                                    <label for="first-name-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Имя"
+                                            name="first_name"
+                                            id="first-name-input"
+                                        >
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label for="last-name-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Фамилия"
+                                            name="last_name"
+                                            id="last-name-input"
+                                        >
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label for="company-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Название компании"
+                                            name="company"
+                                            id="company-input"
+                                        >
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label for="email-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Почта"
+                                            name="email"
+                                            id="email-input"
+                                        >
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label for="phone-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Номер телефона"
+                                            name="phone"
+                                            id="phone-input"
+                                        >
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <label for="city-input" class="input-label">
+                                        <input type="text"
+                                            placeholder="Город"
+                                            name="city"
+                                            id="city-input"
+                                        >
+                                    </label>
+                                </div>
+                            </form>
+                            <div class="client-profile-section__form-block__buttons">
+                                <button class="button button_size_basic button_accent"
+                                    name="button"
+                                    form="client-profile-form"
+                                    disabled
+                                >Сохранить
+                                </button>
+                                <button class="button button_size_basic button_bordered __logout_btn">
+                                    Выход
+                                </button>
+                            </div>
+                        </div>
+                        <div class="client-profile-section__order-history">
+                            <div class="client-profile-section__title_sub">
+                                История заказов
+                            </div>
+                            <div class="client-profile-section__order-history__info-block __order_history__list">
+
+                                <div class="order-history-card">
+                                    <div class="order-history-card__info-block">
+                                        <div class="order-history-card__title-block">
+                                            <span>Проект: ”Лукошко”</span>
+                                            <div class="order-history-card__title-block__tag">
+                                                На рассмотрении
+                                            </div>
+                                        </div>
+                                        <div class="order-history-card__text-block">
+                                            <span>Компания: “Без разницы”</span>
+                                            <span>Сроки: 21.11.2023 - 25.12.2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-history-card__description">
+                                        Описание проекта: Проект должен быть просто прекрасным, если сделаете его неправильно - плохой отзыв оставлю
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script type="module" src="../../src/scripts/app.js"></script>
+</html>

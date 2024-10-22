@@ -1,0 +1,65 @@
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+.button {
+    @include df_ac_jcc;
+
+    width: fit-content;
+    text-wrap: nowrap;
+    cursor: pointer;
+
+    @include transition(color, border-color, background-color, opacity);
+
+    &_size {
+        &_small {
+            padding: .5rem .75rem;
+            @include button_2;
+            border-radius: .375rem;
+        }
+        &_basic {
+            padding: .75rem 1rem;
+            @include button_1;
+            border-radius: .5rem;
+        }
+    }
+    &_accent {
+        color: $white;
+        background-color: $accent-subdued-60;
+        &:hover {
+            background-color: $accent;
+        }
+    }
+    &_bordered {
+        border-width: 1px;
+        border-style: solid;
+        border-color: $accent-subdued-60;
+        background-color: $white;
+        color: $accent-subdued-60;
+        &:hover {
+            color: $accent;
+            border-color: $accent;
+        }
+    }
+    &:active,
+    &_active,
+    &[data-state="active"] {
+        &.button_accent {
+            background-color: $dark;
+            color: $white;
+        }
+        &.button_bordered {
+            background-color: $accent;
+            border-color: $accent;
+            color: $white;
+        }
+    }
+    &:disabled,
+    &_disabled,
+    &[data-state="disabled"] {
+        pointer-events: none;
+        opacity: .4;
+    }
+}

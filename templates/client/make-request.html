@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NexGen</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=""/>
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <link rel="stylesheet" href="../../src/styles/main.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-section">
+            <div class="header-section__container">
+                <div class="header-section__logo-block">
+                    <a href="" class="header-section__logo-block__logo">
+                        <img src="../../src/assets/images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="header-section__logo-block__nav">
+                        <a href="/templates/client/projects-statuses.html" class="link link_size_basic link_primary">
+                            Статусы
+                        </a>
+                        <a href="/templates/client/make-request.html" class="link link_size_basic link_primary link_active">
+                            Запрос
+                        </a>
+                        <a href="/templates/client/client-chats.html" class="link link_size_basic link_primary">
+                            Чаты
+                        </a>
+                    </div>
+                </div>
+                <a href="/templates/client/client-profile.html" class="header-section__nav-block">
+                    <button class="icon-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.87988 24C2.87988 21.5752 3.84074 19.2496 5.55107 17.535C7.2614 15.8204 9.58111 14.8571 11.9999 14.8571C14.4187 14.8571 16.7384 15.8204 18.4487 17.535C20.159 19.2496 21.1199 21.5752 21.1199 24H2.87988ZM11.9999 13.7143C8.22078 13.7143 5.15988 10.6457 5.15988 6.85714C5.15988 3.06857 8.22078 0 11.9999 0C15.779 0 18.8399 3.06857 18.8399 6.85714C18.8399 10.6457 15.779 13.7143 11.9999 13.7143Z" fill="#A6A6A6"/>
+                        </svg>
+                    </button>
+                    <span>Клиент</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="make-request-section">
+                <div class="make-request-section__container">
+                    <div class="make-request-section__form">
+                        <div class="make-request-section__form__title">
+                            Запрос на проект
+                        </div>
+                        <form class="make-request-section__form__inputs" id="make-request-form">
+                            <div class="field">
+                                <label for="company-input" class="input-label">
+                                    <input type="text"
+                                        placeholder="Ваша компания"
+                                        name="company"
+                                        id="company-input"
+                                    >
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="project-input" class="input-label">
+                                    <input type="text"
+                                        placeholder="Название проекта"
+                                        name="project"
+                                        id="project-input"
+                                    >
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="date-from-input" class="input-label">
+                                    <input type="text"
+                                        placeholder="Срок от:"
+                                        name="date_from"
+                                        id="date-from-input"
+                                        class="__date_input"
+                                    >
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="date-to-input" class="input-label">
+                                    <input type="text"
+                                        placeholder="Срок до:"
+                                        name="date_to"
+                                        id="date-to-input"
+                                        class="__date_input"
+                                    >
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label for="description-input" class="input-label">
+                                    <textarea
+                                        placeholder="Описание проекта..."
+                                        name="description"
+                                        id="description-input"
+                                    ></textarea>
+                                </label>
+                            </div>
+                        </form>
+                        <button class="button button_size_basic button_accent"
+                            name="button"
+                            form="make-request-form"
+                            disabled
+                        >Отправить запрос
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script type="module" src="../../src/scripts/app.js"></script>
+</html>

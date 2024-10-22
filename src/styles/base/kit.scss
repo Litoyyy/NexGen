@@ -1,0 +1,55 @@
+$dark: #212121;
+$accent: #610BD9;
+$white: #FFFFFF;
+
+$dark-subdued-80: color-mix(in srgb, $dark 80%, $white 20%);
+$dark-subdued-60: color-mix(in srgb, $dark 60%, $white 40%);
+$dark-subdued-40: color-mix(in srgb, $dark 40%, $white 60%);
+$dark-subdued-20: color-mix(in srgb, $dark 20%, $white 80%);
+
+$accent-subdued-80: color-mix(in srgb, $white 20%, $accent 80%);
+$accent-subdued-60: color-mix(in srgb, $white 40%, $accent 60%);
+$accent-subdued-40: color-mix(in srgb, $white 60%, $accent 40%);
+$accent-subdued-20: color-mix(in srgb, $white 80%, $accent 10%);
+
+@mixin heading_1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+@mixin heading_2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+@mixin heading_3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+@mixin subheading{
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 110%;
+}
+@mixin text_1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+@mixin text_2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+@mixin button_1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 130%;
+}
+@mixin button_2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+}

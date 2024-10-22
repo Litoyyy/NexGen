@@ -1,0 +1,61 @@
+.client-chats-section {
+    display: flex;
+    height: calc(100dvh - 4.75rem);
+    &__chats-list {
+        @include df_fdc;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+        max-width: 28.25rem;
+        @include wh_100;
+        border-right: 1px solid $dark-subdued-20;
+    }
+    &__info-block {
+        position: relative;
+        @include df_fdc;
+        @include wh_100;
+        &_empty {
+            @include df_ac_jcc;
+            @include wh_100;
+            background-color: $accent-subdued-20;
+            &__tag {
+                @include df_ac_jcc;
+                padding: .625rem 1rem;
+                border-radius: .75rem;
+                @include text_1;
+                color: $white;
+                background-color: $accent-subdued-40;
+            }
+        }
+        &__header {
+            @include df_ac;
+            justify-content: space-between;
+            padding: 1.5rem 3rem;
+            @include text_1;
+            color: $white;
+            background-color: $accent-subdued-60;
+        }
+        &__body {
+            @include df_fdc;
+            justify-content: flex-end;
+            gap: 2rem;
+            padding: 0 1rem;
+            padding-bottom: 8rem;
+            @include wh_100;
+            background-color: $accent-subdued-20;
+        }
+        &__input-block {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1rem;
+            width: calc(100% - 2rem);
+            &__button {
+                display: flex;
+                width: 2rem;
+                height: 2rem;
+                svg {
+                    @include wh_100;
+                }
+            }
+        }
+    }
+}

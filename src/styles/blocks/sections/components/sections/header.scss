@@ -1,0 +1,33 @@
+header {
+    .header-section {
+        border-bottom: 1px solid $dark-subdued-20;
+        &__container {
+            @include df_ac;
+            justify-content: space-between;
+            padding: 1rem 8rem;
+        }
+        &__logo-block {
+            @include df_ac;
+            gap: 4rem;
+            &__logo {
+                display: flex;
+                height: 3rem;
+                aspect-ratio: 113 / 24;
+                img {
+                    @include image_contain;
+                }
+            }
+            &__nav {
+                @include df_ac;
+                gap: 3rem;
+            }
+        }
+        &__nav-block {
+            @include df_ac;
+            gap: .75rem;
+            span {
+                @include subheading;
+            }
+        }
+    }
+}

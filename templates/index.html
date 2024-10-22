@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NexGen</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=""/>
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <link rel="stylesheet" href="../src/styles/main.css">
+</head>
+
+<body>
+    
+    <main>
+
+        <section>
+            <div class="login-section">
+                <div class="login-section__info-block">
+                    <div class="login-section__title">
+                        Вход
+                    </div>
+                    <form class="login-section__form" id="login-client-form">
+                        <div class="field">
+                            <label for="email-input" class="input-label">
+                                <input type="text"
+                                    placeholder="Почта"
+                                    name="email"
+                                    id="email-input"
+                                >
+                            </label>
+                        </div>
+                        <div class="field">
+                            <label for="password-input" class="input-label">
+                                <input type="password"
+                                    placeholder="Пароль"
+                                    name="password"
+                                    id="password-input"
+                                >
+                            </label>
+                        </div>
+                    </form>
+                    <div class="login-section__button-block">
+                        <button class="button button_size_basic button_accent"
+                            name="button"
+                            form="login-client-form"
+                            disabled
+                        >Войти
+                        </button>
+                        <a href="client-register.html" class="link link_size_small link_primary">
+                            Регистрация
+                        </a>
+                    </div>
+                    <div class="login-section__links-block">
+                        <span>Кто вы?</span>
+                        <div class="login-section__links-block__list">
+                            <a href="/templates/index.html" class="button button_size_small button_bordered button_active">
+                                Клиент
+                            </a>
+                            <a href="/templates/login/manager-login.html" class="button button_size_small button_bordered">
+                                Менеджер
+                            </a>
+                            <a href="/templates/login/admin-login.html" class="button button_size_small button_bordered">
+                                Администратор
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script type="module" src="../src/scripts/app.js"></script>
+</html>

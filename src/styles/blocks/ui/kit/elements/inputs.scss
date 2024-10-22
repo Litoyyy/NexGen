@@ -1,0 +1,44 @@
+input, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    color: $dark;
+    background-color: inherit;
+    font-family: "Exo 2", sans-serif;
+    @include text_2;
+    width: 100%;
+    &::placeholder {
+        color: $dark-subdued-60;
+    }
+}
+
+
+.field {
+    position: relative;
+    @include df_fdc;
+    gap: .5rem;
+    .input-label {
+        @include df_ac;
+        padding: .75rem 1rem;
+        gap: 2rem;
+        border-radius: .375rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $dark-subdued-20;
+        background-color: $white;
+        @include transition(border-color,background-color);
+        cursor: text;
+        &:hover {
+            border-color: $accent-subdued-60;
+        }
+        &:has(input:focus),
+        &:has(textarea:focus) {
+            border-color: $accent;
+            svg path {
+                fill: $accent;
+            }
+        }
+    }
+}

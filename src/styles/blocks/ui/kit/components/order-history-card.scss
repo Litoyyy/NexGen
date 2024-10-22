@@ -1,0 +1,37 @@
+.order-history-card {
+    @include df_fdc;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid $dark-subdued-20;
+    &__info-block {
+        @include df_fdc;
+        gap: .75rem;
+    }
+    &__title-block {
+        @include df_ac;
+        justify-content: space-between;
+        span {
+            @include subheading;
+        }
+        &__tag {
+            @include df_ac_jcc;
+            padding: .375rem .5rem;
+            border-radius: .25rem;
+            @include text_2;
+            color: $white;
+            background-color: $accent-subdued-60;
+        }
+    }
+    &__text-block {
+        @include df_ac;
+        justify-content: space-between;
+        span {
+            @include text_2;
+            color: $dark-subdued-60;
+        }
+    }
+    &__description {
+        @include text_1;
+    }
+}

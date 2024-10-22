@@ -1,0 +1,26 @@
+.make-request-section {
+    @include df_fdc_ac;
+    &__container {
+        padding-top: 4rem;
+    }
+    &__form {
+        @include df_fdc;
+        gap: 3rem;
+        padding: 4rem 2rem;
+        &__title {
+            @include heading_2;
+        }
+        &__inputs {
+            @include grid(2, .75rem);
+            .field:has(textarea) {
+                grid-column: span 2;
+                textarea {
+                    height: 8rem;
+                }
+            }
+        }
+        .button {
+            width: 100%;
+        }
+    }
+}

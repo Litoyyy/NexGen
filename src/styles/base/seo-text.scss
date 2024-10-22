@@ -1,0 +1,14 @@
+article {
+    h2 {
+        @include heading_2;
+    }
+    h3 {
+        @include heading_3;
+    }
+    p {
+        @include text_1;
+    }
+    ul {
+        @include text_1;
+    }
+}

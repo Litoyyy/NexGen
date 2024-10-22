@@ -1,0 +1,56 @@
+.client-profile-section {
+    &__container {
+        @include df_fdc;
+        gap: 2rem;
+        padding: 2rem 10rem;
+    }
+    &__title {
+        @include heading_1;
+        &_sub {
+            @include heading_2;
+        }
+    }
+    &__info-block {
+        display: flex;
+    }
+    &__form-block {
+        @include df_fdc;
+        gap: 3rem;
+        padding: 4rem;
+        width: 100%;
+        &__inputs {
+            @include grid(2, 1.5rem);
+        }
+        &__buttons {
+            @include grid(2, 1.5rem);
+            .button {
+                width: 100%;
+            }
+        }
+    }
+    &__order-history {
+        @include df_fdc;
+        gap: 3rem;
+        padding: 4rem;
+        width: 100%;
+        &__info-block {
+            @include df_fdc;
+            gap: 1rem;
+            overflow-y: auto;
+            max-height: 44.125rem;
+            &::-webkit-scrollbar {
+                width: .375rem;
+            }
+        
+            &::-webkit-scrollbar-track {
+                background: inherit;
+                border-radius: 100px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: $dark-subdued-20;
+                border-radius: 100px;
+            }
+        }
+    }
+}

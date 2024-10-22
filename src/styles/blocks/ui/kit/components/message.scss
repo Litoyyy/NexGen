@@ -1,0 +1,26 @@
+.message {
+    @include df_fdc;
+    align-items: flex-end;
+    gap: .75rem;
+    padding: 1rem;
+    max-width: 36rem;
+    width: fit-content;
+    border-radius: .75rem .75rem .75rem 0;
+    background-color: $white;
+    @include text_1;
+    span {
+        @include text_2;
+    }
+    &_your {
+        @include df_fdc;
+        color: $white;
+        background-color: $accent-subdued-60;
+        border-radius: .75rem .75rem 0 .75rem;
+    }
+    &__container {
+        &:has(.message_your) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

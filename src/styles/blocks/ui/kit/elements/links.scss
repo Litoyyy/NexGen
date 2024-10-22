@@ -1,0 +1,46 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $dark;
+    font-family: "Exo 2", sans-serif;
+}
+.link {
+    @include df_ac;
+    gap: .5rem;
+    cursor: pointer;
+
+    @include transition(color);
+
+    &_size {
+        &_small {
+            @include text_2;
+        }
+        &_basic {
+            @include text_1;
+        }
+    }
+
+    &_primary {
+        color: $dark;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &_dark {
+        color: $accent;
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &:active,
+    &_active,
+    &[data-state="active"] {
+        &.link_primary {
+            color: $accent;
+        }
+        &.link_accent {
+            color: $dark;
+        }
+    }
+}

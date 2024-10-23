@@ -18,15 +18,16 @@ export function clientInfo() {
     const orderHistory = document.querySelector('.__order_history__list');
     if(orderHistory) {
         const requestsCookie = getCookiesRequests();
-        if(requestsCookie.length === 0) return;
-        const fragment = document.createDocumentFragment();
-        const promises = requestsCookie.map(async(item)=>{
-            const card = await addCard(item);
-            fragment.appendChild(card);
-        });
-        Promise.all(promises).then(res=>{
-            orderHistory.appendChild(fragment);
-        });
+        if(requestsCookie.length > 0) {
+            const fragment = document.createDocumentFragment();
+            const promises = requestsCookie.map(async(item)=>{
+                const card = await addCard(item);
+                fragment.appendChild(card);
+            });
+            Promise.all(promises).then(res=>{
+                orderHistory.appendChild(fragment);
+            });
+        };
     };
     const logoutBtn = document.querySelector('.__logout_btn');
     if(logoutBtn) {

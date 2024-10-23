@@ -10,14 +10,26 @@ export function chat() {
         const message = messagesList.querySelector('.message');
         chatCardsBullet.forEach(card=>{
             if(card.dataset.name == queryName) {
-                message.innerHTML = `
-                    ${card.querySelector('.chat-card-bullet__text').innerHTML}
-                    <span>${card.querySelector('.chat-card-bullet__title-block').querySelector('span').innerHTML}</span>
-                `;
-                messagesHeader.innerHTML = `
-                    ${card.dataset.name} • Менеджер
-                    <span>Проект “${card.dataset.project}”</span>
-                `;
+                if(!!messagesHeader.dataset.manager) {
+                    messagesHeader.innerHTML = `
+                        ${card.dataset.name} • Клиент
+                        <span>Проект “${card.dataset.project}”</span>
+                    `;
+                    message.innerHTML = `
+                        ${card.querySelector('.chat-card-bullet__text').innerHTML}
+                        <span>${card.querySelector('.chat-card-bullet__title-block').querySelector('span').innerHTML}</span>
+                    `;
+                    message.classList.add('message_your');
+                } else {
+                    messagesHeader.innerHTML = `
+                        ${card.dataset.name} • Менеджер
+                        <span>Проект “${card.dataset.project}”</span>
+                    `;
+                    message.innerHTML = `
+                        ${card.querySelector('.chat-card-bullet__text').innerHTML}
+                        <span>${card.querySelector('.chat-card-bullet__title-block').querySelector('span').innerHTML}</span>
+                    `;
+                }
             };
         });
     };

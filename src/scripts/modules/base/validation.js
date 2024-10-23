@@ -91,7 +91,7 @@ export function validation() {
             (body)=>{
                 setCookie('account', JSON.stringify(body));
                 clearForm(loginManager);
-                window.location.href = '/templates/manager-profile.html';
+                window.location.href = '/templates/manager/clients-list.html';
             }
         );
     };

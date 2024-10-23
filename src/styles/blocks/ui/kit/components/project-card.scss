@@ -1,0 +1,38 @@
+.project-card {
+    @include df_fdc;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+    border-radius: 1.75rem;
+    border: 1px solid $accent-subdued-40;
+    &__color {
+        content: '';
+        height: 10.875rem;
+        width: 100%;
+        border-radius: 1rem;
+        &[data-subdued="40"] {
+            background-color: $accent-subdued-40;
+        }
+        &[data-subdued="60"] {
+            background-color: $accent-subdued-60;
+        }
+        &[data-subdued="80"] {
+            background-color: $accent-subdued-80;
+        }
+        &[data-subdued="100"] {
+            background-color: $accent;
+        }
+    }
+    &__title-block {
+        @include df_fdc;
+        gap: 1rem;
+        &__title {
+            @include text_1;
+        }
+        &__list {
+            @include df_ac;
+            justify-content: space-between;
+            @include text_2;
+            color: $dark-subdued-60;
+        }
+    }
+}

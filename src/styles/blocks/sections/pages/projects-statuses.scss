@@ -1,0 +1,41 @@
+.projects-statuses-section {
+    &__container {
+        @include df_fdc;
+        padding: 2rem 10rem;
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+    &__title {
+        @include heading_1;
+    }
+    &__tag {
+        @include df_ac_jcc;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        width: fit-content;
+        background-color: $accent-subdued-60;
+        color: $white;
+        @include subheading;
+    }
+    &__info-block {
+        @include df_fdc;
+        gap: 1.5rem;
+    }
+    &__table {
+        display: flex;
+        border: 1px solid $dark-subdued-20;
+        &__column {
+            @include df_fdc;
+            width: 100%;
+            &__cell {
+                @include df_ac;
+                padding: 1.5rem 2rem;
+                border: 1px solid $dark-subdued-20;
+                @include text_1;
+                &.title {
+                    @include subheading;
+                }
+            }
+        }
+    }
+}

@@ -40,5 +40,9 @@ input, textarea {
                 fill: $accent;
             }
         }
+        &:has(input.error),
+        &:has(textarea.error) {
+            border-color: $error;
+        }
     }
 }

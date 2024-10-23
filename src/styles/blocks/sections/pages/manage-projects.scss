@@ -1,0 +1,19 @@
+.manage-projects-section {
+    &__container {
+        @include df_fdc;
+        padding: 2rem 10rem;
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+    &__title {
+        @include heading_1;
+    }
+    &__filters-block {
+        @include df_ac;
+        gap: 1rem;
+    }
+    &__info-block {
+        @include grid(2, 3rem);
+        row-gap: 6rem;
+    }
+}

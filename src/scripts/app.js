@@ -5,6 +5,7 @@ import { inputs } from './modules/base/inputs.js';
 import { filters } from './modules/base/filters.js';
 import { pagination } from './modules/base/pagination.js';
 import { validation } from './modules/base/validation.js';
+import { select } from './modules/base/select.js';
 
 import * as pages from './modules/pages/index.js';
 
@@ -13,15 +14,15 @@ import { chat } from './modules/chat.js';
 import { clientInfo } from './modules/clientInfo.js';
 
 
+accordion();
+anchor();
+modals();
+inputs();
+filters();
+pagination();
+validation();
+select()
 
-accordion()
-anchor()
-modals()
-inputs()
-filters()
-pagination()
-validation()
-
-checkLoggedIn()
-chat()
-clientInfo()
+checkLoggedIn();
+chat();
+clientInfo();

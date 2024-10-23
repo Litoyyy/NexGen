@@ -13,6 +13,9 @@ button {
 
     @include transition(color, border-color, background-color, opacity);
 
+    input {
+        display: none;
+    }
     &_size {
         &_small {
             padding: .5rem .75rem;
@@ -45,7 +48,8 @@ button {
     }
     &:active,
     &_active,
-    &[data-state="active"] {
+    &[data-state="active"],
+    &:has(input:checked) {
         &.button_accent {
             background-color: $dark;
             color: $white;

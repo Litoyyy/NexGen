@@ -21,21 +21,4 @@
         @include df_fdc;
         gap: 1.5rem;
     }
-    &__table {
-        display: flex;
-        border: 1px solid $dark-subdued-20;
-        &__column {
-            @include df_fdc;
-            width: 100%;
-            &__cell {
-                @include df_ac;
-                padding: 1.5rem 2rem;
-                border: 1px solid $dark-subdued-20;
-                @include text_1;
-                &.title {
-                    @include subheading;
-                }
-            }
-        }
-    }
 }

@@ -1,0 +1,32 @@
+.managers-list-section {
+    &__container {
+        @include df_fdc;
+        padding: 2rem 10rem;
+        gap: 2rem;
+        padding-bottom: 0;
+    }
+    &__title {
+        @include heading_1;
+    }
+    &__add-new {
+        @include df_ac;
+        gap: .75rem;
+        @include subheading;
+        @include transition(color);
+        cursor: pointer;
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &:hover {
+            color: $accent-subdued-60;
+        }
+        &:active {
+            color: $accent;
+        }
+    }
+    &__info-block {
+        @include grid(2, 1.5rem);
+        row-gap: 0;
+    }
+}

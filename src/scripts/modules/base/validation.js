@@ -103,7 +103,7 @@ export function validation() {
             (body)=>{
                 setCookie('account', JSON.stringify(body));
                 clearForm(loginAdmin);
-                window.location.href = '/templates/admin-profile.html';
+                window.location.href = '/templates/admin/clients-list.html';
             }
         );
     };

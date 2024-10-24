@@ -1,0 +1,38 @@
+.manager-card {
+    @include df_fdc;
+    gap: 1rem;
+    padding: 2rem;
+    &__title-block {
+        @include df_ac;
+        justify-content: space-between;
+        &__title {
+            @include df_ac;
+            gap: 1rem;
+            @include text_1;
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+            span {
+                @include df_ac;
+            }
+        }
+        &__button {
+            width: 2rem;
+            height: 2rem;
+            svg {
+                @include wh_100;
+            }
+        }
+    }
+    &__info {
+        @include df_ac;
+        gap: 1rem;
+        color: $dark-subdued-60;
+        @include text_1;
+        span {
+            color: $dark;
+            width: 5.5rem;
+        }
+    }
+}

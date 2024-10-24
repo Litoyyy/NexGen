@@ -12,6 +12,8 @@ import * as pages from './modules/pages/index.js';
 import { checkLoggedIn } from './modules/checkLoggedIn.js';
 import { chat } from './modules/chat.js';
 import { clientInfo } from './modules/clientInfo.js';
+import { managersList } from './modules/managersList.js';
+import { clientsList } from './modules/clientsList.js';
 
 
 accordion();
@@ -21,8 +23,10 @@ inputs();
 filters();
 pagination();
 validation();
-select()
+select();
 
 checkLoggedIn();
 chat();
 clientInfo();
+managersList();
+clientsList();

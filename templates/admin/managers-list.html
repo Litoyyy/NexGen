@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NexGen</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=""/>
+    <meta name="og:title" content="">
+    <meta name="og:description" content="">
+    <meta name="keywords" content=""/>
+
+    <link rel="icon" type="image/x-icon" href="">
+
+    <link rel="stylesheet" href="../../src/styles/main.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-section">
+            <div class="header-section__container">
+                <div class="header-section__logo-block">
+                    <a href="" class="header-section__logo-block__logo">
+                        <img src="../../src/assets/images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="header-section__logo-block__nav">
+                        <a href="/templates/admin/clients-list.html" class="link link_size_basic link_primary">
+                            Список клиентов
+                        </a>
+                        <a href="/templates/admin/managers-list.html" class="link link_size_basic link_primary link_active">
+                            Список менеджеров
+                        </a>
+                        <a href="/templates/admin/projects-reports.html" class="link link_size_basic link_primary">
+                            Отчеты о проектах
+                        </a>
+                    </div>
+                </div>
+                <button class="header-section__nav-block __logout_btn">
+                    <div class="icon-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.87988 24C2.87988 21.5752 3.84074 19.2496 5.55107 17.535C7.2614 15.8204 9.58111 14.8571 11.9999 14.8571C14.4187 14.8571 16.7384 15.8204 18.4487 17.535C20.159 19.2496 21.1199 21.5752 21.1199 24H2.87988ZM11.9999 13.7143C8.22078 13.7143 5.15988 10.6457 5.15988 6.85714C5.15988 3.06857 8.22078 0 11.9999 0C15.779 0 18.8399 3.06857 18.8399 6.85714C18.8399 10.6457 15.779 13.7143 11.9999 13.7143Z" fill="#A6A6A6"/>
+                        </svg>
+                    </div>
+                    <span>Выйти</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+       <section>
+            <div class="managers-list-section">
+                <div class="managers-list-section__container">
+                    <div class="managers-list-section__title">
+                        Список менеджеров
+                    </div>
+                    <div class="managers-list-section__add-new __new_manager__btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9L11.25 11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15L12.75 12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z" fill="#610BD9"/>
+                        </svg>
+                        Добавить нового менеджера
+                    </div>
+                    <div class="managers-list-section__info-block __new_manager__list">
+                        <div class="manager-card">
+                            <div class="manager-card__title-block">
+                                <div class="manager-card__title-block__title">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#813DE0"/>
+                                        <path d="M11.5 22C11.5 20.7876 11.9741 19.6248 12.818 18.7675C13.6619 17.9102 14.8065 17.4286 16 17.4286C17.1935 17.4286 18.3381 17.9102 19.182 18.7675C20.0259 19.6248 20.5 20.7876 20.5 22H11.5ZM16 16.8571C14.1353 16.8571 12.625 15.3229 12.625 13.4286C12.625 11.5343 14.1353 10 16 10C17.8647 10 19.375 11.5343 19.375 13.4286C19.375 15.3229 17.8647 16.8571 16 16.8571Z" fill="white"/>
+                                    </svg>
+                                    <span class="__title_block">Имя: test</span>
+                                </div>
+                                <button class="manager-card__title-block__button __change_manager__btn">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5864 10.1456L19.5752 8.15675C20.2465 7.48546 20.5821 7.14982 20.9578 6.99741C21.4399 6.80181 21.9793 6.80181 22.4615 6.99741C22.8372 7.14982 23.1728 7.48546 23.8441 8.15675C24.5154 8.82805 24.851 9.16369 25.0035 9.53938C25.1991 10.0215 25.1991 10.5609 25.0035 11.0431C24.851 11.4188 24.5154 11.7544 23.8441 12.4257L21.8788 14.391C20.0958 13.3731 18.6173 11.9054 17.5864 10.1456ZM16.1319 11.6L8.69194 19.04C8.26688 19.465 8.05435 19.6776 7.91462 19.9387C7.77488 20.1998 7.71594 20.4945 7.59805 21.0839L6.91541 24.4971C6.84889 24.8297 6.81563 24.996 6.91024 25.0906C7.00484 25.1852 7.17114 25.152 7.50372 25.0855L7.50375 25.0855L7.50376 25.0855L10.9169 24.4028C11.5064 24.2849 11.8011 24.226 12.0622 24.0862C12.3233 23.9465 12.5358 23.734 12.9609 23.3089L20.4207 15.8492C18.6886 14.7669 17.2245 13.3125 16.1319 11.6Z" fill="#212121"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="manager-card__info" data-info="login">
+                                <span>Логин:</span>
+                                Manager-321
+                            </div>
+                            <div class="manager-card__info" data-info="password">
+                                <span>Пароль:</span>
+                                Password-1231231
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+        
+    </main>
+    
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script type="module" src="../../src/scripts/app.js"></script>
+</html>
